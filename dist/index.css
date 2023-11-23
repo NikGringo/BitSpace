@@ -7891,7 +7891,7 @@ body, dd, div, dl, dt, h1, h2, h3, h4, h5, h6, li, ol, ul {
     text-align: center;
     border-color: #666;
     object-fit: cover;
-    background-image: url("../images/half_tone_2_blue.svg");
+    background-image: url("images/half_tone_2_blue.svg");
     background-color: #011a27;
     background-size: cover;
     background-position: 50%
@@ -9118,7 +9118,7 @@ html {
 
 @font-face {
     font-family: cuyabra;
-    src: url("../resources/fonts/cuyabra.ttf")
+    src: url("resources/fonts/cuyabra.ttf")
 }
 
 li {

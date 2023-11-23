@@ -48,17 +48,6 @@ class Header extends React.Component {
           className={`${dataSource.page.className}${phoneOpen ? ' open' : ''}`}
         >
           <div style={{ display: 'flex', alignItems: 'center' }}>
-            {/* <TweenOne
-              animation={{
-                rotate: 360,
-                yoyo: true,
-                repeat: -1,
-                duration: 10000,
-              }}
-              {...dataSource.logo}
-            >
-              <img width="100%" src={dataSource.logo.children} alt="img" />
-            </TweenOne> */}
             <h2 style={{ color: 'white' }}>BitSpace</h2>
           </div>
           {isMobile && (
