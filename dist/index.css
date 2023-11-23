@@ -9108,12 +9108,12 @@ html {
 
 @font-face {
     font-family: Fonty;
-    src: url("../resources/fonts/fonty.ttf")
+    src: url("/resources/fonts/fonty.ttf")
 }
 
 @font-face {
     font-family: Bungee;
-    src: url("../resources/fonts/bungee.ttf")
+    src: url("/resources/fonts/bungee.ttf")
 }
 
 @font-face {
