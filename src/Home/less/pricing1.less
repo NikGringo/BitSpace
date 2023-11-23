@@ -1,0 +1,124 @@
+@pricing1: pricing1;
+.@{pricing1}-wrapper {
+  border: none;
+  .@{pricing1} {
+    >p {
+      text-align: center;
+    }
+    .home-page {
+      position: relative;
+    } 
+    &-content-wrapper {
+      min-height: 600px;
+      position: relative;
+    }
+    &-block-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 460px;
+      // border-radius: 10px;
+    background-color: #063852;
+      text-align: center;
+      color: #666;
+      min-height: 600px;
+      .page-pro();
+      &.active {
+        .@{pricing1} {
+          &-top-wrapper {
+            background: @primary-color;
+          }
+          &-name,
+          &-money,
+          &-button {
+            color: #fff;
+          }
+          &-button {
+           background-color: rgb(189, 161, 135);
+          }
+        }
+      }
+    }
+    &-block {
+      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    &-top-wrapper {
+      width: 100%;
+      padding: 16px 24px;
+    }
+    &-name {
+      font-size: 32px;
+      font-family: Сuyabra;
+      color: rgb(189, 161, 135);
+    }
+    &-money {
+      // font-family: 'Helvetica Neue', sans-serif;
+      font-size: 14px;
+    }
+    &-content {
+      font-size: 16px;
+      line-height: 2;
+      font-weight: 300;
+      margin: 32px 24px 48px;
+      text-align: start;
+      padding-left: 10px;
+      color: #F9FAFB;
+    }
+    &-line {
+      display: block;
+      height: 1px;
+      background: #d9d9d9;
+      margin: 0 24px;
+    }
+    &-button-wrapper {
+      margin: 18px 24px;
+      background-color: rgb(189, 161, 135);
+    }
+    &-button {
+      padding: 0 24px;
+      background-color: rgb(189, 161, 135);
+      color: #fff;
+    }
+  }
+  &.home-page-wrapper {
+    .@{pricing1}-title-wrapper {
+      margin-bottom: 64px;
+      text-align: center;
+      h1 {        
+      color: rgb(189, 161, 135);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .@{pricing1}-wrapper {
+    padding-bottom: 0;
+    min-height: 300px;
+    &-content-wrapper {
+      min-height: 300px;
+    }
+    .home-page {
+      // width: 100vw;
+      padding: 0px;
+    }    
+  .@{pricing1} {
+    &-block-box {
+      width:90%;
+    }
+  }
+    &-content {
+      font-size: 16px;
+      line-height: 2;
+      font-weight: 300;
+      margin: 32px 24px 48px;
+      text-align: center;
+      width: 300px;
+    }
+  }
+}
