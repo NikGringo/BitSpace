@@ -6,7 +6,7 @@ export const Nav20DataSource = {
   page: { className: 'home-page' },
   logo: {
     className: 'header2-logo',
-    children: 'images/icon.svg',
+    children: 'icon.svg',
   },
   LinkMenu: {
     className: 'header2-menu',
