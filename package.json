@@ -41,7 +41,9 @@
     "lint"
   ],
   "scripts": {
+    "build-old": "atool-build && copy index.html dist",
     "build": "atool-build && copy index.html dist",
+    "bb": "copy resources/* dist",
     "lint": "eslint --ext .js,.jsx src/",
     "eslint-fix": "eslint --fix src/ --ext .js,.jsx",
     "start": "dora --plugins webpack",

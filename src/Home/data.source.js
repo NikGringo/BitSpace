@@ -4,10 +4,10 @@ export const Nav20DataSource = {
   isScrollLink: true,
   wrapper: { className: 'header2 home-page-wrapper jrhtw9ph4a-editor_css' },
   page: { className: 'home-page' },
-  logo: {
-    className: 'header2-logo',
-    children: 'icon.svg',
-  },
+  // logo: {
+  //   className: 'header2-logo',
+  //   children: 'icon.svg',
+  // },
   LinkMenu: {
     className: 'header2-menu',
     children: [

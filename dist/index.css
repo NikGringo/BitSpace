@@ -7891,7 +7891,7 @@ body, dd, div, dl, dt, h1, h2, h3, h4, h5, h6, li, ol, ul {
     text-align: center;
     border-color: #666;
     object-fit: cover;
-    background-image: url("images/half_tone_2_blue.svg");
+    background-image: url("../images/half_tone_2_blue.svg");
     background-color: #011a27;
     background-size: cover;
     background-position: 50%
@@ -7964,11 +7964,11 @@ body, dd, div, dl, dt, h1, h2, h3, h4, h5, h6, li, ol, ul {
     }
 
     .banner3 .banner3-name-en {
-        font-size: 22px
+        font-size: 42px
     }
 
     .banner3 .banner3-slogan {
-        font-size: 44px;
+        font-size: 64px;
         line-height: 1.5;
         margin: auto;
         text-align: center
@@ -8049,30 +8049,16 @@ body, dd, div, dl, dt, h1, h2, h3, h4, h5, h6, li, ol, ul {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    height: 50px;
     -webkit-box-pack: space-evenly;
     -webkit-justify-content: space-evenly;
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly
 }
 
-.header2-logo {
-    display: inline-block;
-    position: relative;
-    width: 50px;
-    line-height: 64px
-}
-
-.header2-logo img {
-    vertical-align: middle;
-    display: inline-block
-}
-
-.header2-logo a {
-    display: block
-}
-
 .header2-menu {
-    float: right
+    float: right;
+    height: 50px
 }
 
 .header2-menu>.menu-item {
@@ -8096,12 +8082,12 @@ body, dd, div, dl, dt, h1, h2, h3, h4, h5, h6, li, ol, ul {
 }
 
 @media screen and (max-width:767px) {
-    .header2-logo {
-        z-index: 101
-    }
-
     .header2.home-page-wrapper .home-page {
         padding: 0 24px
+    }
+
+    .header2.home-page-wrapper .home-page h2 {
+        display: none
     }
 
     .header2-menu {
@@ -8118,8 +8104,6 @@ body, dd, div, dl, dt, h1, h2, h3, h4, h5, h6, li, ol, ul {
 
     .header2-menu .menu-item {
         display: block;
-        width: 100%;
-        padding: 0 24px;
         border-bottom: none;
         line-height: 40px;
         height: 40px;
@@ -8190,7 +8174,7 @@ body, dd, div, dl, dt, h1, h2, h3, h4, h5, h6, li, ol, ul {
     background-color: #011a27;
     margin: auto;
     overflow: hidden;
-    padding: 96px 0;
+    padding: 96px 10px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -8231,7 +8215,6 @@ body, dd, div, dl, dt, h1, h2, h3, h4, h5, h6, li, ol, ul {
 
     .content13-wrapper .title-content {
         line-height: 32px;
-        width: 90vw;
         text-align: justify
     }
 }
@@ -8248,23 +8231,6 @@ body, dd, div, dl, dt, h1, h2, h3, h4, h5, h6, li, ol, ul {
     margin-left: 0;
     border-radius: 0 20px 20px 0;
     padding: 0 24px
-}
-
-.content2-wrapper .content2:hover {
-    -webkit-transition: box-shadow .3s cubic-bezier(.215, .61, .355, 1), -webkit-transform .3s cubic-bezier(.215, .61, .355, 1);
-    transition: box-shadow .3s cubic-bezier(.215, .61, .355, 1), -webkit-transform .3s cubic-bezier(.215, .61, .355, 1);
-    transition: transform .3s cubic-bezier(.215, .61, .355, 1), box-shadow .3s cubic-bezier(.215, .61, .355, 1);
-    transition: transform .3s cubic-bezier(.215, .61, .355, 1), box-shadow .3s cubic-bezier(.215, .61, .355, 1), -webkit-transform .3s cubic-bezier(.215, .61, .355, 1)
-}
-
-.content2-wrapper .content2:hover, .content2-wrapper .content2:hover:hover {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0)
-}
-
-.content2-wrapper .content2:hover:hover {
-    box-shadow: 0 0 15px hsla(29, 29%, 64%, .842)
 }
 
 .content2-wrapper .content2-img {
@@ -8700,71 +8666,6 @@ body, dd, div, dl, dt, h1, h2, h3, h4, h5, h6, li, ol, ul {
     }
 }
 
-.content12-wrapper {
-    background-color: #fafafa;
-    min-height: 470px
-}
-
-.content12-wrapper .content12 {
-    padding: 64px 24px
-}
-
-.content12-wrapper .content12>p {
-    text-align: center
-}
-
-.content12-wrapper .img-wrapper {
-    margin: 0 auto;
-    left: 0;
-    right: 0
-}
-
-.content12-wrapper .img-wrapper .block {
-    margin-bottom: 40px
-}
-
-.content12-wrapper .img-wrapper .block .block-content {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    border-radius: 4px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    border: none;
-    height: 64px;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-transition: box-shadow .3s cubic-bezier(.215, .61, .355, 1), -webkit-transform .3s cubic-bezier(.215, .61, .355, 1);
-    transition: box-shadow .3s cubic-bezier(.215, .61, .355, 1), -webkit-transform .3s cubic-bezier(.215, .61, .355, 1);
-    transition: box-shadow .3s cubic-bezier(.215, .61, .355, 1), transform .3s cubic-bezier(.215, .61, .355, 1);
-    transition: box-shadow .3s cubic-bezier(.215, .61, .355, 1), transform .3s cubic-bezier(.215, .61, .355, 1), -webkit-transform .3s cubic-bezier(.215, .61, .355, 1)
-}
-
-.content12-wrapper .img-wrapper .block .block-content>span {
-    width: 100%;
-    display: block
-}
-
-@media screen and (max-width:767px) {
-    .content12-wrapper {
-        overflow: hidden
-    }
-
-    .content12-wrapper .content12 ul li {
-        display: block;
-        width: 100%;
-        padding: 2%
-    }
-
-    .content12-wrapper .content12 ul li span {
-        height: 168px
-    }
-}
-
 .footer1-wrapper {
     background-color: #063852;
     overflow: hidden;
@@ -9107,18 +9008,8 @@ html {
 }
 
 @font-face {
-    font-family: Fonty;
-    src: url("/resources/fonts/fonty.ttf")
-}
-
-@font-face {
-    font-family: Bungee;
-    src: url("/resources/fonts/bungee.ttf")
-}
-
-@font-face {
     font-family: cuyabra;
-    src: url("resources/fonts/cuyabra.ttf")
+    src: url("../resources/fonts/cuyabra.ttf")
 }
 
 li {

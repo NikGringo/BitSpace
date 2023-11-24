@@ -9,7 +9,6 @@ import Content13 from './Content13';
 import Feature2 from './Feature2';
 import Feature1 from './Feature1';
 import Content9 from './Content9';
-import Content12 from './Content12';
 import Footer1 from './Footer1';
 import Pricing1 from './Pricing1';
 
@@ -22,7 +21,6 @@ import {
   Feature21DataSource,
   Feature11DataSource,
   Content90DataSource,
-  Content120DataSource,
   Pricing10DataSource,
   Footer10DataSource,
 } from './data.source';
@@ -112,12 +110,6 @@ export default class Home extends React.Component {
         dataSource={Content90DataSource}
         isMobile={this.state.isMobile}
       />,
-      // <Content12
-      //   id="Content12_0"
-      //   key="Content12_0"
-      //   dataSource={Content120DataSource}
-      //   isMobile={this.state.isMobile}
-      // />,
       <Pricing1
         id="Pricing1_0"
         key="Pricing1_0"

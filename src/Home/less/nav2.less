@@ -1,7 +1,5 @@
 @header2: header2;
 .@{header2} {
-  // background: @second-background-color;
-  // width: 90%;
   margin: auto;
   z-index: 1;
   box-shadow: 0 5px 8px fade(#000, 15);
@@ -10,24 +8,12 @@
   .home-page {
     padding: 0 24px;
     display: flex;
-    // align-items: center;
+    height: 50px;
     justify-content: space-evenly;
-  }
-  &-logo {
-    display: inline-block;
-    position: relative;
-    width: 50px;
-    line-height: 64px;
-    & img {
-      vertical-align: middle;
-      display: inline-block;
-    }
-    & a {
-      display: block;
-    }
   }
   &-menu {
     float: right;
+    height: 50px;
     >.menu-item {
       line-height: 62px;
       display: inline-block;
@@ -51,11 +37,11 @@
 
 @media screen and (max-width: 767px) {
   .@{header2} {
-    &-logo {
-      z-index: 101;
-    }
     &.home-page-wrapper .home-page {
       padding: 0 24px;
+      h2 {
+        display: none;
+      }
     }
     &-menu {
       height: auto;
@@ -67,9 +53,8 @@
       overflow: hidden;
       transition: opacity .3s @ease-in-out;
       .menu-item {
-        display: block;
-        width: 100%;
-        padding: 0 24px;
+        display: block;;
+        // padding: 0 24px;
         border-bottom: none;
         line-height: 40px;
         height: 40px;
