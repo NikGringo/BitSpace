@@ -3,7 +3,7 @@
   min-height: 380px;
   // background: url("https://gw.alipayobjects.com/zos/rmsportal/ZsWYzLOItgeaWDSsXdZd.svg") no-repeat bottom;
   background-size: cover;
-  background-color: #011A27;
+  background-color: @main-background-color;
   margin: auto;
   overflow: hidden;
   padding: 96px 10px;
@@ -13,21 +13,21 @@
   &.home-page-wrapper {
     .title-wrapper {
       margin-bottom: 32px;
-      background-color: #063852;
+      background-color: @second-background-color;
       border-radius: 10px;
       padding: 30px;
     }
   }
   .title-h1 {
     p {
-      color: rgb(189, 161, 135);
+      color: @title-font-color;
     }
   }
   .title-content {
     line-height: 32px;
     width: 70vw;
     text-align: justify;
-    color: #F9FAFB;
+    color: @content-font-color;
   }
 }
 

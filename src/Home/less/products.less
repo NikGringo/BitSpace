@@ -4,22 +4,10 @@
 .@{content9}-wrapper {
   .title-h1 {
     p {
-    color: rgb(189, 161, 135);
+    color: @title-font-color;
     }
   }
   height: 100%;
-  .backimage {
-    // padding: 0px -24px;
-    margin: 0px;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background-image:url("/images/banner-2.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    opacity: 0.2;
-  }
   &.home-page-wrapper {
     padding-top: 0px;
     overflow: initial;
@@ -107,7 +95,7 @@
       position: relative;
       min-height: 18px;
       word-wrap: break-word;
-      color: rgb(189, 161, 135);
+      color: @title-font-color;
     }
     .block-icon {
       position: absolute;
@@ -115,7 +103,7 @@
       transform: translateX(~"calc(-50% + 1px)");
     }
     .block-content {
-      color: #F9FAFB;
+      color: @content-font-color;
       margin-bottom: 50px;
       font-size: 20px;
       min-height: 18px;

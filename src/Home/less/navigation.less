@@ -8,8 +8,37 @@
   .home-page {
     padding: 0 24px;
     display: flex;
-    height: 50px;
+    height: 60px;
     justify-content: space-evenly;
+  }
+  .logoIcon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    h2 {
+      color: white;
+      margin: auto;
+    }
+    img {      
+      margin: auto;
+      width: 50px;
+      height: 50px;
+      animation: spin 45s linear infinite;
+    }
+  }
+  &-logo {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: '50px';
+    line-height: 64px;
+    & img {
+      vertical-align: middle;
+      display: inline-block;
+    }
+    & a {
+      display: block;
+    }
   }
   &-menu {
     float: right;
@@ -20,7 +49,7 @@
       padding: 0 20px;
       cursor: pointer;
       background: transparent;
-      color: rgb(189, 161, 135);
+      color: @title-font-color;
       font-size: 16px;
       height: 64px;
       border-bottom-color: transparent;
@@ -39,7 +68,7 @@
   .@{header2} {
     &.home-page-wrapper .home-page {
       padding: 0 24px;
-      h2 {
+      .h2 {
         display: none;
       }
     }
@@ -107,4 +136,22 @@
       }
     }
   }
+}
+
+@media screen and (max-width: 915px) {
+  .@{header2} {
+    &.home-page-wrapper .home-page {
+      padding: 0 24px;
+      .logoIcon {
+        img {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

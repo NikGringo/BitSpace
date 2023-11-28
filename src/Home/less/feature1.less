@@ -1,10 +1,10 @@
 @content1: content1;
 .@{content1}-wrapper {
-  background-color: #011A27;
+  background-color: @main-background-color;
   height: 400px;
   margin-top: 40px;
   .@{content1} {
-    background-color: #063852;
+    background-color: @second-background-color;
     margin-right: 0px;
     border-radius: 20px 0px 0px 20px;
     padding: 0 24px;
@@ -36,13 +36,13 @@
       .@{content1}-title {
         font-size: 32px;
         font-weight: normal;
-        color: rgb(189, 161, 135);
+        color: @title-font-color;
         border-bottom: 2px solid #0E4A7C;
       }
       .@{content1}-content {
         margin-top: 20px;
         text-align: justify;
-        color: #F9FAFB;
+        color: @content-font-color;
       }
     }
   }

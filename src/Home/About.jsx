@@ -1,7 +1,8 @@
-import React from 'react';
+import React from "react";
 // import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 // import QueueAnim from 'rc-queue-anim';
-import { getChildrenToRender } from './utils';
+import { getChildrenToRender } from "./utils";
+import { Parallax } from "rc-scroll-anim";
 
 class Content13 extends React.PureComponent {
   render() {

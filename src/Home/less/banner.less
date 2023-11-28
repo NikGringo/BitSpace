@@ -45,7 +45,7 @@
     margin: auto;
     p {
       font-family: cuyabra;
-      background: linear-gradient(-45deg, #6355a4, #6355a4, rgb(189, 161, 135), rgb(189, 161, 135));
+      background: linear-gradient(-45deg, #6355a4, #6355a4, @title-font-color, @title-font-color);
 	background-size: 300%;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -81,6 +81,28 @@
     }
     & &-slogan {
       font-size: 64px;
+      line-height: 1.5;
+      margin: auto;
+      text-align: center;
+    }
+    & &-name {
+      font-size: 24px;
+    }
+  }
+}
+
+@media screen and (max-height: 550px) {
+  .@{banner3} {
+    background-attachment: inherit;
+    & &-text-wrapper {
+      width: 90%;
+      height: 50%;
+    }
+    & &-name-en {
+      font-size: 42px;
+    }
+    & &-slogan {
+      font-size: 40px;
       line-height: 1.5;
       margin: auto;
       text-align: center;

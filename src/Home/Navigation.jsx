@@ -19,6 +19,7 @@ class Header extends React.Component {
 
   render() {
     const { dataSource, isMobile, ...props } = this.props;
+    console.log('dataSource', dataSource)
     const { phoneOpen } = this.state;
     const { LinkMenu } = dataSource;
     const navData = LinkMenu.children;
@@ -47,8 +48,9 @@ class Header extends React.Component {
           {...dataSource.page}
           className={`${dataSource.page.className}${phoneOpen ? ' open' : ''}`}
         >
-          <div style={{ display: 'flex', alignItems: 'center' }}>
-            <h2 style={{ color: 'white' }}>BitSpace</h2>
+          <div className='logoIcon'>
+          <img src={dataSource.logo.children} alt="img" />
+            <h2>BitSpace</h2>
           </div>
           {isMobile && (
             <div

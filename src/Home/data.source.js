@@ -1,13 +1,13 @@
 import React from 'react';
 
-export const Nav20DataSource = {
+export const NavigationData = {
   isScrollLink: true,
   wrapper: { className: 'header2 home-page-wrapper jrhtw9ph4a-editor_css' },
   page: { className: 'home-page' },
-  // logo: {
-  //   className: 'header2-logo',
-  //   children: 'icon.svg',
-  // },
+  logo: {
+    className: 'header2-logo',
+    children: 'icon.svg',
+  },
   LinkMenu: {
     className: 'header2-menu',
     children: [
@@ -19,25 +19,25 @@ export const Nav20DataSource = {
       },
       {
         name: 'linkNav~lowd8acojeb',
-        href: '#Content13_0',
+        href: '#About',
         children: 'О нас',
         className: 'menu-item',
       },
       {
         name: 'linkNav~lowd8w9s39p',
-        href: '#Content9_0',
+        href: '#Products',
         children: 'Описание программных продуктов',
         className: 'menu-item',
       },
       {
         name: 'linkNav~lowd8w9s39p',
-        href: '#Pricing1_0',
+        href: '#Vacancy',
         children: 'Вакансии',
         className: 'menu-item',
       },
       {
         name: 'linkNav~lowdb4dyt4',
-        href: '#contacts',
+        href: '#Footer',
         children: 'Контакты',
         className: 'menu-item',
       },
@@ -45,7 +45,7 @@ export const Nav20DataSource = {
   },
   mobileMenu: { className: 'header2-mobile-menu' },
 }; // BitSpace
-export const Banner30DataSource = {
+export const BannerData = {
   wrapper: { className: 'banner3' },
   textWrapper: {
     className: 'banner3-text-wrapper',
@@ -68,7 +68,7 @@ export const Banner30DataSource = {
     ],
   },
 }; // О НАС
-export const Content130DataSource = {
+export const AboutData = {
   OverPack: {
     className: 'home-page-wrapper content13-wrapper',
     playScale: 0.3,
@@ -105,7 +105,7 @@ export const Content130DataSource = {
     ],
   },
 }; // Анализ
-export const Feature20DataSource = {
+export const AnalysData = {
   wrapper: { className: 'home-page-wrapper content2-wrapper' },
   OverPack: { className: 'home-page content2', playScale: 0.3 },
   imgWrapper: { className: 'content2-img', md: 10, xs: 24 },
@@ -131,7 +131,7 @@ export const Feature20DataSource = {
     ),
   },
 }; // Автоматизация
-export const Feature10DataSource = {
+export const AutomatizationData = {
   wrapper: { className: 'home-page-wrapper content1-wrapper' },
   OverPack: { className: 'home-page content1', playScale: 0.3 },
   imgWrapper: { className: 'content1-img', md: 10, xs: 24 },
@@ -153,7 +153,7 @@ export const Feature10DataSource = {
     ),
   },
 }; // Робототехника
-export const Feature21DataSource = {
+export const RoboticsData = {
   wrapper: { className: 'home-page-wrapper content2-wrapper' },
   OverPack: { className: 'home-page content2', playScale: 0.3 },
   imgWrapper: { className: 'content2-img', md: 10, xs: 24 },
@@ -177,7 +177,7 @@ export const Feature21DataSource = {
     ),
   },
 }; // Разработка
-export const Feature11DataSource = {
+export const DevelopmentData = {
   wrapper: { className: 'home-page-wrapper content1-wrapper' },
   OverPack: { className: 'home-page content1', playScale: 0.3 },
   imgWrapper: { className: 'content1-img', md: 10, xs: 24 },
@@ -203,7 +203,7 @@ export const Feature11DataSource = {
     ),
   },
 }; // Описание программных продуктов
-export const Content90DataSource = {
+export const ProductsData = {
   wrapper: { className: 'home-page-wrapper content9-wrapper' },
   page: { className: 'home-page content9' },
   titleWrapper: {
@@ -461,110 +461,8 @@ export const Content90DataSource = {
       },
     ],
   },
-}; // Клиенты
-export const Content120DataSource = {
-  wrapper: { className: 'home-page-wrapper content12-wrapper' },
-  page: { className: 'home-page content12' },
-  OverPack: { playScale: 0.3, className: '' },
-  titleWrapper: {
-    className: 'title-wrapper',
-    children: [
-      {
-        name: 'title',
-        children: (
-          <span>
-            <p>НАШИ КЛИЕНТЫ</p>
-          </span>
-        ),
-        className: 'title-h1',
-      },
-    ],
-  },
-  block: {
-    className: 'img-wrapper',
-    children: [
-      {
-        name: 'block0',
-        className: 'block',
-        md: 8,
-        xs: 24,
-        children: {
-          wrapper: { className: 'block-content' },
-          img: {
-            children:
-              'https://gw.alipayobjects.com/zos/rmsportal/TFicUVisNHTOEeMYXuQF.svg',
-          },
-        },
-      },
-      {
-        name: 'block1',
-        className: 'block',
-        md: 8,
-        xs: 24,
-        children: {
-          wrapper: { className: 'block-content' },
-          img: {
-            children:
-              'https://gw.alipayobjects.com/zos/rmsportal/hkLGkrlCEkGZeMQlnEkD.svg',
-          },
-        },
-      },
-      {
-        name: 'block2',
-        className: 'block',
-        md: 8,
-        xs: 24,
-        children: {
-          wrapper: { className: 'block-content' },
-          img: {
-            children:
-              'https://gw.alipayobjects.com/zos/rmsportal/bqyPRSZmhvrsfJrBvASi.svg',
-          },
-        },
-      },
-      {
-        name: 'block3',
-        className: 'block',
-        md: 8,
-        xs: 24,
-        children: {
-          wrapper: { className: 'block-content' },
-          img: {
-            children:
-              'https://gw.alipayobjects.com/zos/rmsportal/UcsyszzOabdCYDkoPPnM.svg',
-          },
-        },
-      },
-      {
-        name: 'block4',
-        className: 'block',
-        md: 8,
-        xs: 24,
-        children: {
-          wrapper: { className: 'block-content' },
-          img: {
-            children:
-              'https://gw.alipayobjects.com/zos/rmsportal/kRBeaICGexAmVjqBEqgw.svg',
-          },
-        },
-      },
-      {
-        name: 'block5',
-        className: 'block',
-        md: 8,
-        xs: 24,
-        children: {
-          wrapper: { className: 'block-content' },
-          img: {
-            children:
-              'https://gw.alipayobjects.com/zos/rmsportal/ftBIiyJcCHpHEioRvPsV.svg',
-          },
-        },
-      },
-    ],
-  },
 }; // Вакансии
-export const Pricing10DataSource = {
+export const VacancyData = {
   wrapper: { className: 'home-page-wrapper pricing1-wrapper' },
   page: { className: 'home-page pricing1' },
   OverPack: { playScale: 0.3, className: 'pricing1-content-wrapper' },
@@ -755,7 +653,7 @@ export const Pricing10DataSource = {
     ],
   },
 };
-export const Footer10DataSource = {
+export const FooterData = {
   wrapper: { className: 'home-page-wrapper footer1-wrapper' },
   OverPack: { className: 'footer1', playScale: 0.2, id: 'contacts' },
   block: {
@@ -859,7 +757,7 @@ export const Footer10DataSource = {
               ),
             },
             {
-              href: '#Content13_0',
+              href: '#About',
               name: 'link0',
               children: (
                 <span>
@@ -868,7 +766,7 @@ export const Footer10DataSource = {
               ),
             },
             {
-              href: '#Content9_0',
+              href: '#Products',
               name: 'link0',
               children: (
                 <span>
@@ -877,7 +775,7 @@ export const Footer10DataSource = {
               ),
             },
             {
-              href: '#Pricing1_0',
+              href: '#Vacancy',
               name: 'link0',
               children: (
                 <span>
