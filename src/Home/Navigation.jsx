@@ -19,7 +19,6 @@ class Header extends React.Component {
 
   render() {
     const { dataSource, isMobile, ...props } = this.props;
-    console.log('dataSource', dataSource)
     const { phoneOpen } = this.state;
     const { LinkMenu } = dataSource;
     const navData = LinkMenu.children;

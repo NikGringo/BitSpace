@@ -1,71 +1,37 @@
 @banner3: banner3;
 .@{banner3} {
-  // 如果在第一屏且导航位置为 relative, 一屏为 height: calc(~"100vh - 64px");
   width: 100%;
   height: 100vh;
   position: relative;
   text-align: center;
   border-color: #666;
   object-fit: cover;
-  // background-image: url("https://gw.alipayobjects.com/zos/rmsportal/xTPkCNNLOnTEbGgVZOpE.jpg");
-  // background-image: url("https://emc2rrspvpp.exactdn.com/wp-content/uploads/2022/05/The-Solution-Consumer-Electronics-Brands-hero.jpg");
-  // background-image:url("/images/banner.jpg");
-  // background-image:url("/images/half_tone.svg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-image:url("/images/half_tone_2_blue.svg");
-  // background-image:url("/images/half_tone_2_sands.svg");
-  // background-image:url("/images/half_tone_horizontal.svg");
   background-color: @main-background-color;
   background-size: cover;
   background-position: center;
   & &-text-wrapper {
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    left: 0;
-    right: 0;
     color: @template-text-color-light;
-    max-width: 845px;
-    height: 500px;
-    width: 80%;
     font-size: 20px;
-    line-height: 28px;
-    font-weight: 400;
-    >.queue-anim-leaving {
-      position: relative !important;
-    }
   }
   & &-slogan {
     font-size: 5em;
-    line-height: 150px;
     font-weight: 900;
-    margin: 26px auto 38px;
-    display: table;
-    margin: auto;
-    p {
-      font-family: cuyabra;
-      background: linear-gradient(-45deg, #6355a4, #6355a4, @title-font-color, @title-font-color);
-	background-size: 300%;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	animation: animated_text 5s ease-in-out infinite;
-	-moz-animation: animated_text 5s ease-in-out infinite;
-	-webkit-animation: animated_text 5s ease-in-out infinite;
-    }
+    font-family: cuyabra;
   }
   & &-name-en {
-    display: block;
     font-size: 14px;
-    line-height: 32px;
     font-weight: 400;
   }
   & &-name {
     font-size: 54px;
     overflow: hidden;
-    // opacity: 0.8;
     color: @title-font-color;
-    line-height: 70px;
+    margin: auto;
   }
 }
 
@@ -81,9 +47,8 @@
     }
     & &-slogan {
       font-size: 64px;
-      line-height: 1.5;
+      // line-height: 1.5;
       margin: auto;
-      text-align: center;
     }
     & &-name {
       font-size: 24px;
@@ -103,7 +68,7 @@
     }
     & &-slogan {
       font-size: 40px;
-      line-height: 1.5;
+      // line-height: 1.5;
       margin: auto;
       text-align: center;
     }

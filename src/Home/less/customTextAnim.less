@@ -1,0 +1,21 @@
+.texty-banner {
+    span {
+        text-align: end;
+        box-sizing: content-box;
+        padding-left: 7px;
+        background: linear-gradient(-45deg, #6355a4, #6355a4, @title-font-color, @title-font-color);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: animated_text 5s ease-in-out infinite;
+        -moz-animation: animated_text 5s ease-in-out infinite;
+        animation: animated_text 5s ease-in-out infinite;
+        background-size: 500% 200%;
+    }
+}
+  
+  @keyframes animated_text {
+      0% { background-position: 0px 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0px 50%; }
+  }

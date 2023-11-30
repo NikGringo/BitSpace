@@ -1,4 +1,6 @@
 import React from 'react';
+import TextAnimation from '../Components/TextAnimation.jsx'
+import CustomTextAnim from '../Components/CustomTextAnim.jsx'
 
 export const NavigationData = {
   isScrollLink: true,
@@ -6,7 +8,7 @@ export const NavigationData = {
   page: { className: 'home-page' },
   logo: {
     className: 'header2-logo',
-    children: 'icon.svg',
+    children: 'logo.svg',
   },
   LinkMenu: {
     className: 'header2-menu',
@@ -53,7 +55,7 @@ export const BannerData = {
       {
         name: 'slogan',
         className: 'banner3-slogan',
-        children: <p>BitSpace</p>,
+        children: <div className='text-cover'><CustomTextAnim /></div>, // TextAnimation CustomTextAnim
         // texty: true,
       },
       {
