@@ -3,7 +3,8 @@
 let path = require("path");
 module.exports = function(webpackConfig) {
   webpackConfig.babel.plugins.push('transform-runtime');
-  webpackConfig.output.path = path.join(__dirname, '/dist');
+  webpackConfig.output.path = path.join(__dirname, '/');
+  webpackConfig.output.filename = "main.js";
   webpackConfig.babel.plugins.push(['import', {
     libraryName: 'antd',
     style: 'css',
